@@ -11,6 +11,8 @@ jobs:
     permissions:
       contents: read
       id-token: write
+      security-events: write
+      actions: read 
 
     env:
       IMAGE: europe-west1-docker.pkg.dev/${{ vars.GCP_PROJECT_ID }}/my-repo/my-image
